@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON!</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&family=Inter+Tight:wght@500&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="section" id="seleccionar-mascota">
+      <h1 class="section__title">Mokepon</h1>
+      <h2 class="section__subtitle">Elige tu mascota: </h2>
+
+      <div class="cards">
+        <label class="cards__pet" for="hipodoge">
+          <p class="cards__pet__name">Hipodoge</p>
+          <img class="cards__pet__image" src="./assets/mokepon_hipodoge_attack.png" alt="Imagen Hipodoge">
+        </label>
+        <input class="cards__pet__selection" type="radio" name="mascota" id="hipodoge" />
+  
+        <label class="cards__pet" for="capipepo">
+          <p class="cards__pet__name">Capipepo</p>
+          <img class="cards__pet__image" src="./assets/mokepon_capipepo_attack.png" alt="Imagen Capipepo">
+        </label>
+        <input class="cards__pet__selection" type="radio" name="mascota" id="capipepo" />
+  
+        <label class="cards__pet" for="ratigueya">
+          <p class="cards__pet__name">Ratigueya</p>
+          <img class="cards__pet__image" src="./assets/mokepon_ratigueya_attack.png" alt="Imagen Ratigueya">
+        </label>
+        <input class="cards__pet__selection" type="radio" name="mascota" id="ratigueya" />
+      </div>
+
+      <button class="pet__selection__btn" id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section class="section" id="seleccionar-ataque">
+      <h1 class="section__title">Mokepon</h1>
+      <h2 class="section__subtitle">Elige tu ataque: </h2>
+
+      <div>
+        <button id="boton-fuego">Fuego 🔥</button>
+        <button id="boton-agua">Agua 💧</button>
+        <button id="boton-tierra">Tierra 🌱</button>
+      </div>
+
+      <div>
+        <section id="mensajes">
+        </section>
+
+        <section id="reiniciar">
+          <button id="boton-reiniciar">
+            <img src="./assets/refresh.svg" alt="Icono reiniciar">
+            Reiniciar</button>
+        </section>
+      </div>
+
+      <div>
+        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+      </div>
+    </section>
+
+    <script src="./js/mokepon.js"></script>
+  </body>
+</html>
