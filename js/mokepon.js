@@ -124,22 +124,26 @@ function revisarVidas() {
   }
 }
 
-function crearMensaje(resultadoCombate) {
-  const sectionMensajes = document.getElementById('mensajes');
+function crearMensaje(resultado) {
+  const sectionMensajes = document.getElementById('resultado');
+  const ataquesDelJugador = document.getElementById('ataques-del-jugador');
+  const ataquesDelEnemigo = document.getElementById('ataques-del-enemigo');
+    
+  const nuevoAtaqueDelJugador = document.createElement('p');
+  const nuevoAtaqueDelEnemigo = document.createElement('p');
 
-  const parrafo = document.createElement('p');
-  parrafo.innerHTML = `Tu mascota atacó con ${ataqueJugador}. La mascota del enemigo atacó con ${ataqueEnemigo} - ${resultadoCombate}`;
+  sectionMensajes.innerHTML = resultado;
+  nuevoAtaqueDelJugador.innerHTML = ataqueJugador;
+  nuevoAtaqueDelEnemigo.innerHTML = ataqueEnemigo;
 
-  sectionMensajes.appendChild(parrafo);
+  ataquesDelJugador.appendChild(nuevoAtaqueDelJugador);
+  ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo);
 }
 
-function crearMensajeFinal(resutadoFinal) {
-  const sectionMensajes = document.getElementById('mensajes');
-
-  const parrafo = document.createElement('p');
-  parrafo.innerHTML = resutadoFinal;
-
-  sectionMensajes.appendChild(parrafo);
+function crearMensajeFinal(resultadoFinal) {
+  const sectionMensajes = document.getElementById('resultado');
+    
+  sectionMensajes.innerHTML = resultadoFinal;
 
   const botonFuego = document.getElementById('boton-fuego');
   botonFuego.disabled = true;
@@ -149,7 +153,7 @@ function crearMensajeFinal(resutadoFinal) {
   botonTierra.disabled = true;
 
   const sectionBotonReiniciar = document.getElementById('boton-reiniciar');
-  sectionBotonReiniciar.style.display = 'block';
+  sectionBotonReiniciar.style.display = 'flex';
 }
 
 function reiniciarJuego() {

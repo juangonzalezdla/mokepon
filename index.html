@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOKEPON!</title>
 
+    <title>MOKEPON!</title>
     <link rel="stylesheet" href="./css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 
   <body>
     <section class="section" id="seleccionar-mascota">
-      <h1 class="section__title">Mokepon</h1>
+      <h1 class="section__title">Mokepon!</h1>
       <h2 class="section__subtitle">Elige tu mascota: </h2>
 
       <div class="cards">
@@ -42,27 +42,30 @@
     </section>
 
     <section class="section" id="seleccionar-ataque">
-      <h1 class="section__title">Mokepon</h1>
+      <h1 class="section__title">Mokepon!</h1>
       <h2 class="section__subtitle">Elige tu ataque: </h2>
 
-      <div>
-        <button id="boton-fuego">Fuego 🔥</button>
-        <button id="boton-agua">Agua 💧</button>
-        <button id="boton-tierra">Tierra 🌱</button>
+      <div class="attacks">
+        <button class="attacks__btn" id="boton-fuego">Fuego 🔥</button>
+        <button class="attacks__btn" id="boton-agua">Agua 💧</button>
+        <button class="attacks__btn" id="boton-tierra">Tierra 🌱</button>
       </div>
 
-      <div>
-        <section id="mensajes">
-        </section>
+      <div class="combat">
+        <p class="combat__messages" id="resultado">
+          Disfruta el combate
+        </p>
 
-        <section id="reiniciar">
-          <button id="boton-reiniciar">
-            <img src="./assets/refresh.svg" alt="Icono reiniciar">
+        <section class="restart" id="reiniciar">
+          <button class="restart__btn" id="boton-reiniciar">
+            <img class="restart__icon" src="./assets/restart.svg" alt="Icono reiniciar">
             Reiniciar</button>
         </section>
       </div>
 
       <div>
+        <div id="ataques-del-jugador"></div>
+        <div id="ataques-del-enemigo"></div>
         <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
         <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
       </div>

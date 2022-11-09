@@ -28,7 +28,7 @@ body {
 }
 
 .section__title {
-  margin: 80px 0;
+  margin: 50px 0;
   font-size: 4rem;
   color: var(--white);
   font-family: var(--gemunu-libre);
@@ -60,6 +60,8 @@ body {
 
 .cards__pet:hover {
   cursor: pointer;
+  background-color: black;
+  transition: all 0.3s;
 }
 
 .cards__pet__name {
@@ -93,4 +95,74 @@ body {
 
 .pet__selection__btn:hover {
   cursor: pointer;
+  background-color: green;
+  transition: all 0.2s;
+}
+
+.attacks {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.attacks__btn {
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--navy);
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.attacks__btn:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.combat {
+  width: 300px;
+  background: #EEEEEE;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.combat__messages {
+  font-family: var(--inter-tight);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.restart__btn {
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 20px;
+  background-color: var(--navy);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-family: var(--gemunu-libre);
+  letter-spacing: 1px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.restart__btn:hover {
+  cursor: pointer;
+  background-color: green;
+  transition: all 0.2s;
+}
+
+.restart__icon {
+  width: 30px;
 }
