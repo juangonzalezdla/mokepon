@@ -1,0 +1,15 @@
+@media (max-width: 680px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .attacks {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .counter {
+    grid-template-columns: 130px 130px;
+  }
+}

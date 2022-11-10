@@ -7,6 +7,7 @@
 
     <title>MOKEPON!</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,23 +20,24 @@
       <h2 class="section__subtitle">Elige tu mascota: </h2>
 
       <div class="cards">
+        <input class="cards__pet__selection" type="radio" name="mascota" id="hipodoge" />
         <label class="cards__pet" for="hipodoge">
           <p class="cards__pet__name">Hipodoge</p>
           <img class="cards__pet__image" src="./assets/mokepon_hipodoge_attack.png" alt="Imagen Hipodoge">
         </label>
-        <input class="cards__pet__selection" type="radio" name="mascota" id="hipodoge" />
-  
+        
+        <input class="cards__pet__selection" type="radio" name="mascota" id="capipepo" />
         <label class="cards__pet" for="capipepo">
           <p class="cards__pet__name">Capipepo</p>
           <img class="cards__pet__image" src="./assets/mokepon_capipepo_attack.png" alt="Imagen Capipepo">
         </label>
-        <input class="cards__pet__selection" type="radio" name="mascota" id="capipepo" />
-  
+        
+        <input class="cards__pet__selection" type="radio" name="mascota" id="ratigueya" />
         <label class="cards__pet" for="ratigueya">
           <p class="cards__pet__name">Ratigueya</p>
           <img class="cards__pet__image" src="./assets/mokepon_ratigueya_attack.png" alt="Imagen Ratigueya">
         </label>
-        <input class="cards__pet__selection" type="radio" name="mascota" id="ratigueya" />
+        
       </div>
 
       <button class="pet__selection__btn" id="boton-mascota">Seleccionar</button>
@@ -63,11 +65,17 @@
         </section>
       </div>
 
-      <div>
-        <div id="ataques-del-jugador"></div>
-        <div id="ataques-del-enemigo"></div>
-        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+      <div class="counter">
+        <div class="counter__cards">
+          <p class="counter__lifes" id="vidas-jugador">3</p>
+          <p class="counter__pet__name" id="mascota-jugador"></p>
+          <div class="counter__attacks" id="ataques-del-jugador"></div>
+        </div>
+        <div class="counter__cards">
+          <p class="counter__lifes" id="vidas-enemigo">3</p>
+          <p class="counter__pet__name" id="mascota-enemigo"></p>
+          <div class="counter__attacks" id="ataques-del-enemigo"></div>
+        </div>
       </div>
     </section>
 

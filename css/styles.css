@@ -80,6 +80,10 @@ body {
   display: none;
 }
 
+.cards__pet__selection:checked + .cards__pet {
+  background-color: black;
+}
+
 .pet__selection__btn {
   margin-top: 50px;
   width: 250px;
@@ -126,7 +130,7 @@ body {
 
 .combat {
   width: 300px;
-  background: #EEEEEE;
+  background: var(--white);
   padding: 40px;
   margin-top: 20px;
   border-radius: 20px;
@@ -165,4 +169,39 @@ body {
 
 .restart__icon {
   width: 30px;
+}
+
+.counter {
+  display: grid;
+  grid-template-columns: 180px 180px;
+  gap: 20px;
+  margin-top: 30px;
+  color: var(--white);
+}
+
+.counter__cards {
+  background-color: var(--navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.counter__lifes {
+  font-family: var(--gemunu-libre);
+  font-size: 1.8rem;
+}
+
+.counter__pet__name {
+  font-family: var(--gemunu-libre);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.counter__attacks {
+  font-family: var(--open-sans);
+  font-size: 1rem;
+  margin-bottom: 2px;
 }
