@@ -19,24 +19,7 @@
       <h1 class="section__title">Mokepon!</h1>
       <h2 class="section__subtitle">Elige tu mascota: </h2>
 
-      <div class="cards">
-        <input class="cards__pet__selection" type="radio" name="mascota" id="hipodoge" />
-        <label class="cards__pet" for="hipodoge">
-          <p class="cards__pet__name">Hipodoge</p>
-          <img class="cards__pet__image" src="./assets/mokepon_hipodoge_attack.png" alt="Imagen Hipodoge">
-        </label>
-        
-        <input class="cards__pet__selection" type="radio" name="mascota" id="capipepo" />
-        <label class="cards__pet" for="capipepo">
-          <p class="cards__pet__name">Capipepo</p>
-          <img class="cards__pet__image" src="./assets/mokepon_capipepo_attack.png" alt="Imagen Capipepo">
-        </label>
-        
-        <input class="cards__pet__selection" type="radio" name="mascota" id="ratigueya" />
-        <label class="cards__pet" for="ratigueya">
-          <p class="cards__pet__name">Ratigueya</p>
-          <img class="cards__pet__image" src="./assets/mokepon_ratigueya_attack.png" alt="Imagen Ratigueya">
-        </label>
+      <div id="contenedorTarjetas" class="cards">
         
       </div>
 
@@ -47,10 +30,8 @@
       <h1 class="section__title">Mokepon!</h1>
       <h2 class="section__subtitle">Elige tu ataque: </h2>
 
-      <div class="attacks">
-        <button class="attacks__btn" id="boton-fuego">Fuego 🔥</button>
-        <button class="attacks__btn" id="boton-agua">Agua 💧</button>
-        <button class="attacks__btn" id="boton-tierra">Tierra 🌱</button>
+      <div id="contenedorAtaques" class="attacks">
+        
       </div>
 
       <div class="combat">
@@ -67,12 +48,12 @@
 
       <div class="counter">
         <div class="counter__cards">
-          <p class="counter__lifes" id="vidas-jugador">3</p>
+          <p class="counter__lifes" id="vidas-jugador">0</p>
           <p class="counter__pet__name" id="mascota-jugador"></p>
           <div class="counter__attacks" id="ataques-del-jugador"></div>
         </div>
         <div class="counter__cards">
-          <p class="counter__lifes" id="vidas-enemigo">3</p>
+          <p class="counter__lifes" id="vidas-enemigo">0</p>
           <p class="counter__pet__name" id="mascota-enemigo"></p>
           <div class="counter__attacks" id="ataques-del-enemigo"></div>
         </div>
