@@ -36,12 +36,17 @@
   }
 
   .attacks__btn {
+    width: 200px;
     height: 50px;
   }
 
   .combat {
     padding: 20px;
     margin-top: 0;
+  }
+
+  .counter {
+    margin-bottom: 20px;
   }
 }
 
