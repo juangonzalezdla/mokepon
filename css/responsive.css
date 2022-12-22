@@ -32,6 +32,16 @@
 
   .attacks {
     flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .attacks__btn {
+    height: 50px;
+  }
+
+  .combat {
+    padding: 20px;
+    margin-top: 0;
   }
 }
 
